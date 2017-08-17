@@ -1,0 +1,11 @@
+ClrHome
+Prompt A,B
+While (A!=B)
+If (A>B):Then
+(A–B)→A
+Else
+(B–A)→B
+End
+End
+Disp "GCF: ",A
+Stop

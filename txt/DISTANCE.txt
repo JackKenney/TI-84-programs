@@ -1,0 +1,13 @@
+Menu("DISTANCES","2D",A,"3D",B)
+Lbl A
+Prompt X,Y,C,D
+sqrt((X–C)^2+(Y–D)^2)→L
+Goto C
+Lbl B
+Prompt X,Y,Z,A,B,C
+sqrt((A–X)^2+(B–Y)^2+(C–Z)^2)→L
+Goto C
+Lbl C
+Disp "DISTANCE IS:"
+Disp L
+

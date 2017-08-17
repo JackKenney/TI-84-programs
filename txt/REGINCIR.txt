@@ -1,0 +1,4 @@
+Prompt R,N
+R^2([pi]–((N/2)(sin(360/N)))→A
+(N/2)R^2sin((360/N))→S
+Disp "AREA,SHAPE",A,S

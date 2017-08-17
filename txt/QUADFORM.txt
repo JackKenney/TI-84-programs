@@ -1,0 +1,6 @@
+Prompt A,B,C
+(-B+sqrt(B^2–4AC))/(2A)→X
+(-B–sqrt(B^2–4AC))/(2A)→Y
+Disp X>Frac,Y>Frac
+
+

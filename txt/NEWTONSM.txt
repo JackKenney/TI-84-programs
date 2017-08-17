@@ -1,0 +1,10 @@
+ClrHome
+Input "INITIAL GUESS: ",Z
+Repeat (abs(Z–X)<.001)
+Z→X
+X–y1/nDeriv(y1,X,X,.001)→Z
+Disp Z
+End
+Z→X
+Disp "FUNC VALUE",y1
+

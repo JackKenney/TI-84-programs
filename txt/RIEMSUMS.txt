@@ -1,0 +1,17 @@
+Input "LEFT END:",A
+Input "RIGHT END: ",B
+Input "NUMBER: ",N
+ClrHome
+(B–A/N)→X
+0→L:0→R:0→M
+For C,1,N)
+L+Xy1(A+(C–1)X)→L
+R+Xy1(A+CX)→R
+M+Xy1(A+(C–.5)X)→M
+End
+Disp "LEFT",L
+Disp "RIGHT",R
+Pause 
+Disp "MIDPOINT",M
+Pause 
+Disp "AVE. (TRAPEZOID)",(L+R)/2

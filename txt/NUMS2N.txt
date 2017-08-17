@@ -1,0 +1,14 @@
+Disp "SUM"
+Prompt N
+0→S
+For C,1,N,1)
+S+C→S
+End
+Disp S
+Menu("OPTIONS","SUM",A,"MEAN",B)
+Lbl A
+Disp S
+Stop
+Lbl B
+Disp S/N
+Stop

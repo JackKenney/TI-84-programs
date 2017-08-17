@@ -1,0 +1,20 @@
+FnOff 
+Disp "DY/DX MUST"
+Disp "BE IN Y1"
+Pause 
+Input "X START: ",A
+Input "Y START: ",B
+Input "STEP SIZE: ",H
+Input "NO. OF STEPS: ",N
+A→X
+B→Y
+N+1→dim(l1)
+dim(l1)→dim(l2)
+For I,1,N)
+X+H→U:y1→M
+Y+MH→V
+X→l1(I):Y→l2(I)
+Line(U,V,X,Y)
+U→X
+V→Y
+End

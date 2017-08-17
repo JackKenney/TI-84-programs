@@ -1,0 +1,5 @@
+ClrHome
+Disp "Value 1,2, and the distance"
+Prompt A,B,D
+(B–A)/D→U
+Disp U

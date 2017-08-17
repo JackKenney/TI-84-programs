@@ -1,0 +1,4 @@
+Prompt A,B,C
+(A+B+C)/2→S
+sqrt(S(S–A)(S–B)(S–C))→X
+Disp "AREA",X

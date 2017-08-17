@@ -1,0 +1,6 @@
+ClrList l1
+ClrHome
+Disp "ENTER NUMBER","OF STUDENTS"
+Prompt S
+Disp randIntNoRep(1,S)
+Pause 

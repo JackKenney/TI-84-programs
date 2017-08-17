@@ -1,0 +1,18 @@
+Menu("SOLVE FOR:","MOLARITY",A,"VOLUME",B,"MOLES",C)
+Lbl A
+Disp "IF NO DATA,","ENTER A '1'"
+Prompt N,L,G,M
+(NG/M)/L→U
+Disp U
+Stop
+Lbl B
+Disp "P IS MOLARITY, M IS MM"
+Prompt P,N,G,M
+(NGM)/P→U
+Disp U
+Stop
+Lbl C
+Prompt M,L
+LM→U
+Disp U
+Stop

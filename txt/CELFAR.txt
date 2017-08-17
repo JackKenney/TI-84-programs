@@ -1,0 +1,15 @@
+Menu("Convert to:","Celcius",A,"Fahrenheit",B)
+Lbl A
+Disp "To Celcius"
+Prompt D
+(5/9)*(D–32)→N
+Disp N
+Pause 
+Stop
+Lbl B
+Disp "To Fahrenheit"
+Prompt D
+D*9/5–32→N
+Disp N
+Pause 
+Stop

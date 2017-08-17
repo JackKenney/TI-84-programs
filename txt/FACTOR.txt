@@ -1,0 +1,45 @@
+"JNK"
+ClrHome
+ClrList l1
+
+Disp "INPUT NUMBER:"
+Prompt N
+For C,1,int(sqrt(N)),1)
+If int(N/C)=(N/C)
+Then
+C→l1(dim(l1)+1)
+N/C→l1(dim(l1)+1)
+End
+End
+SortA(l1)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+For G,1,dim(l1))
+Disp l1(G)
+Pause 
+End

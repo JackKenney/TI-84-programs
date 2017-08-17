@@ -1,0 +1,3 @@
+For K,0,398)
+Pxl-On( K,50)
+End

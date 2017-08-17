@@ -1,0 +1,4 @@
+Prompt R,[theta]
+([theta][pi]R/180)→D
+[theta]R→R
+Disp "DEG,RAD",D,R

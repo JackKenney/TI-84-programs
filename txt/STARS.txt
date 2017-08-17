@@ -1,0 +1,14 @@
+ClrHome
+"Y"→Str2
+
+Input "What is your name?: ",Str1
+Disp "Hello, "+Str1
+While Str2="Y"
+Input "How many stars do you want?: ",U
+For A,1,U,1)
+Disp "*"
+End
+Input "Do you want more stars?Y/N: ",Str2
+End
+Disp "Goodbye, "+Str1
+Stop

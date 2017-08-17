@@ -1,0 +1,50 @@
+"Jack Kenney"
+Lbl L
+Disp "[theta] IS OUT VAR"
+Menu("Convert Acid!","pH to [H+]",A,"pOH to [OH–]",B,"pKa to Ka",G,"[H+] and [OH–]",C,"[H+] to pH",D,"[OH–] to pOH",E,"Buffer pH",H)
+Lbl A
+Disp "10^-X"
+Prompt X
+10^(-X)→[theta]
+Goto U
+Lbl B
+Disp "10^-X"
+Prompt X
+10^(-X)→[theta]
+Goto U
+Lbl C
+Disp "110^-14/X"
+Prompt X
+110^-14/X→[theta]
+Goto U
+Lbl D
+Disp "-log(X)"
+Prompt X
+-log(X)→[theta]
+Goto U
+Lbl E
+Disp "-log(X)"
+Prompt X
+-log(X)→[theta]
+Goto U
+Lbl G
+Disp "10^-X"
+Prompt X
+10^(-X)→[theta]
+Goto U
+Lbl H
+
+
+
+Goto U
+Lbl U
+Disp [theta]
+Pause 
+Goto S
+Lbl S
+Menu("Done?","No",Z,"Yes",Y)
+Lbl Z
+Goto L
+Lbl Y
+Stop
+

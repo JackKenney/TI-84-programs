@@ -1,0 +1,37 @@
+.02→H
+" "→Str1
+If abs(M–2.016)<=H
+"H2"→Str1
+If abs(M–32.00)<=H
+"O2"→Str1
+If abs(M–28.02)<=H
+"N2 OR CO"→Str1
+If abs(M–38.00)<=H
+"F2"→Str1
+If abs(M–70.90)<=H
+"CL2"→Str1
+If abs(M–159.80)<=H
+"BR2"→Str1
+If abs(M–4.00)<=H
+"HELIUM"→Str1
+If abs(M–20.18)<=H
+"NEON"→Str1
+If abs(M–83.80)<=H
+"KRYPTON"→Str1
+If abs(M–131.29)<=H
+"XENON"→Str1
+If abs(M–222)<=H
+"RADON"→Str1
+If abs(M–44.01)<=H
+"CO2"→Str1
+If abs(M–17.034)<=H
+"NH3"→Str1
+If abs(M–18.016)<=H
+"H2O"→Str1
+If abs(M–29)<=H
+"AIR"→Str1
+If abs(M–42.08)<=H
+"C3H6,CYCLOPROPANE"→Str1
+
+If abs(M–0)<=H
+""→Str1

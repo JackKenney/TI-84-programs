@@ -1,0 +1,34 @@
+Menu("TIME SEGMENT:","YEARLY",A,"QUARTERLY",B,"MONTHLY",C,"WEEKLY",D,"DAILY",E,"CONTINUOUSLY",F)
+Lbl A
+Prompt P,R,T
+P(1+R)^(T)→Z
+Goto [theta]
+
+Lbl B
+Prompt P,R,T
+P(1+(R/4))^(T)→Z
+Goto [theta]
+
+Lbl C
+Prompt P,R,T
+P(1+(R/12))^(T)→Z
+Goto [theta]
+
+Lbl D
+Prompt P,R,T
+P(1+(R/52))^(T)→[theta]
+Goto [theta]
+
+Lbl E
+Prompt P,R,T
+P(1+(R/365))^(T)→Z
+Goto [theta]
+
+Lbl F
+Prompt P,R,T
+PeRT→Z
+Goto [theta]
+
+Lbl [theta]
+Disp Z
+Stop

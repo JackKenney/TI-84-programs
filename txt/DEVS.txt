@@ -1,0 +1,3 @@
+Prompt U,S
+Disp (U–3S),(U–2S),(U–S),U,(U+S),(U+2S),(U+3S)
+

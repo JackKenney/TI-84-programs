@@ -1,0 +1,5 @@
+ClrHome
+Prompt A,B,M,N
+(2M–A)→X
+(2N–B)→Y
+Disp X,Y

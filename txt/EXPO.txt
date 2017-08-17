@@ -1,0 +1,15 @@
+Menu("EXPONENTIAL","GROWTH",A,"DECAY",B)
+
+Lbl A
+Prompt A,B,T
+A*B^T→U
+Goto [theta]
+
+Lbl B
+Prompt V,P,T
+V(1–P)^T→U
+Goto [theta]
+
+Lbl [theta]
+Disp U
+Stop

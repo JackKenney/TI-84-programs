@@ -1,0 +1,31 @@
+ClrList l6
+{999}→l6
+Prompt N
+Lbl A
+ClrHome
+0→C
+0→G
+Disp "YOUR BEST:",min(l6)
+randInt(1,N)→L
+Disp "GUESS:"
+While (G!=L)
+Prompt G
+If G>N:Then
+Disp "OUT OF BOUNDS"
+End
+If G<L:Then
+Disp "TOO LOW"
+Else:If G>L:Then
+Disp "TOO HIGH"
+End
+End
+C+1→C
+
+End
+augment(l6,{C})→l6
+Disp "CORRECT!","        YOU TOOK",C,"         GUESSES"
+Pause 
+Disp "AGAIN?"
+Menu("AGAIN?","YES",A,"NO",B)
+Lbl B
+Stop

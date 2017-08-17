@@ -1,0 +1,15 @@
+ClrHome
+Menu("FROM:","DEGREES",A,"RADIANS",B)
+Lbl A
+Prompt [theta]
+[theta]*([pi]/180)/[pi]→X
+Disp X>Frac,"[pi]",X*[pi],"RADIANS"
+Pause 
+Stop
+Lbl B
+Prompt [theta]
+[theta]*(180/[pi])→X
+Disp X,"DEGREES"
+Pause 
+Stop
+

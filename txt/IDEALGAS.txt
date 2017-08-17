@@ -1,0 +1,52 @@
+"PROGRAMMED BY: JACK KENNEY     11/16/13"
+Lbl K
+ClrHome
+Menu("PRESSURE UNITS?","ATM",X,"TORR",Y)
+Lbl X
+.08206→R
+Goto Z
+Lbl Y
+62.36→R
+Goto Z
+Lbl Z
+Menu("SOLVE FOR?","PRESSURE",A,"VOLUME",B,"MOLES",C,"TEMPERATURE",D,"GRAMS",E,"MOLAR MASS",F)
+Lbl A
+Prompt V,N,T
+(N*R*T/V)→P
+Disp "PRESSURE= ",P
+Pause 
+Menu("BACK TO TOP","YES",K,"NO",L)
+Lbl B
+Prompt P,N,T
+(N*R*T/P)→V
+Disp "VOLUME=",V,"LITERS"
+Pause 
+Menu("BACK TO TOP?","YES",K,"NO",L)
+Lbl C
+Prompt P,V,T
+((P*V)/(R*T))→N
+Disp "MOLES=",N
+Pause 
+Menu("BACK TO TOP?","YES",K,"NO",L)
+Lbl D
+Prompt P,V,N
+(P*V)/(N*R)→T
+Disp "TEMPERATURE=",T,"KELVIN"
+Pause 
+Menu("BACK TO TOP?","YES",K,"NO",L)
+Lbl E
+Prompt P,V,M,T
+(MPV/(RT))→G
+Disp "MASS=",G,"GRAMS"
+Pause 
+Menu("BACK TO TOP?","YES",K,"NO",Y)
+Lbl F
+Disp "2 DECM. PLACES","IF POSSIBLE"
+Prompt P,V,G,T
+(GRT)/(PV)→M
+prgmMMTABLE
+Disp "MOLAR MASS=",M,"GRAMS/MOLE",Str1
+Pause 
+Menu("BACK TO TOP?","YES",K,"NO",L
+Lbl L
+Stop
